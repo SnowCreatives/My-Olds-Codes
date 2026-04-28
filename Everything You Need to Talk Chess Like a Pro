@@ -1,0 +1,123 @@
+<div style="height: 3px; background: linear-gradient(90deg, #043927 0%, #00ff87 50%, transparent 100%); margin: 20px 0; border-radius: 50px; box-shadow: 0px 4px 10px rgba(0, 255, 135, 0.3), inset 0px 1px 2px rgba(255, 255, 255, 0.2); z-index: 10; position: relative;"></div>
+<div style="max-width: 100%; margin: 20px auto; background: #050505; border: 1px solid #043927; border-radius: 12px; box-shadow: 0 0 50px rgba(0, 255, 135, 0.1); font-family: 'Courier New', monospace; overflow: hidden;">
+<div style="padding: 20px; text-align: center; border-bottom: 2px solid #00ff87; background: linear-gradient(90deg, #021a12 0%, #050505 100%); transition: 0.5s;" onmouseover="this.style.background='linear-gradient(90deg, #043927 0%, #00ff87 100%)'; this.querySelector('h2').style.letterSpacing='5px'; this.querySelector('h2').style.color='#000';" onmouseout="this.style.background='linear-gradient(90deg, #021a12 0%, #050505 100%)'; this.querySelector('h2').style.letterSpacing='2px'; this.querySelector('h2').style.color='#00ff87';">
+<h2 style="margin: 0; color: #00ff87; text-transform: uppercase; letter-spacing: 2px; transition: 0.5s; text-shadow: 0 0 10px rgba(0, 255, 135, 0.5);">⚡ OTL TACTICAL TERMS ⚡</h2>
+<p style="color: #666; font-size: 10px; margin-top: 5px;"><strong><span style="color: #ffffff;">COMPLETE EDITION // EDI&Ccedil;&Atilde;O COMPLETA 1-13</span></strong></p>
+</div>
+<div style="padding: 30px;">
+<div style="margin-bottom: 30px; border: 1px dashed #333; padding: 20px; border-radius: 8px; transition: 0.3s;" onmouseover="this.style.borderColor='#ff0055';" onmouseout="this.style.borderColor='#333';">
+<h3 style="color: #ff0055; margin-top: 0; cursor: help;" onclick="alert('Zugzwang: Any move makes you lose! // Qualquer lance te faz perder!');">[1] ZUGZWANG</h3>
+<div style="margin-bottom: 15px;">
+<p id="def_zug" style="color: #ccc; font-size: 14px; min-height: 40px;"><span style="color: #ff0055;">[EN]</span> A situation where a player is disadvantaged because they must move.</p>
+<button onclick="
+                    let t = document.getElementById('def_zug');
+                    if(t.innerText.includes('[EN]')) {
+                        t.innerHTML = '&lt;span style=\'color: #00ff87;\'&gt;[PT-BR]&lt;/span&gt; Situa&ccedil;&atilde;o onde voc&ecirc; &eacute; obrigado a jogar e isso piora sua posi&ccedil;&atilde;o.';
+                        this.innerText = 'SWITCH TO ENGLISH';
+                    } else {
+                        t.innerHTML = '&lt;span style=\'color: #ff0055;\'&gt;[EN]&lt;/span&gt; A situation where a player is disadvantaged because they must move.';
+                        this.innerText = 'TRADUZIR PARA PORTUGU&Ecirc;S';
+                    }
+                " style="background: transparent; border: 1px solid #ff0055; color: #ff0055; padding: 5px 10px; font-family: 'Courier New'; cursor: pointer; font-size: 10px;">TRADUZIR / TRANSLATE</button></div>
+<div style="background: rgba(0,0,0,0.5); padding: 10px; border-radius: 5px; display: flex; align-items: center; justify-content: space-between; border-left: 3px solid #ff0055;"><span style="font-size: 12px; color: #aaa;">PAIN LEVEL // N&Iacute;VEL DE DOR:</span>
+<div style="display: flex; align-items: center; gap: 10px;"><button onclick="let s=this.parentElement.querySelector('span'); s.textContent=parseInt(s.textContent)+1; s.style.color='#ff0055';" style="background: rgba(255,0,85,0.1); border: 1px solid #ff0055; color: #ff0055; border-radius: 4px; padding: 5px 10px; cursor: pointer;">▲</button> <span style="font-size: 20px; font-weight: bold; color: #fff; min-width: 40px; text-align: center;">99</span> <button onclick="let s=this.parentElement.querySelector('span'); if(parseInt(s.textContent)&gt;0) s.textContent=parseInt(s.textContent)-1; s.style.color='#00ff87';" style="background: rgba(0,255,135,0.1); border: 1px solid #00ff87; color: #00ff87; border-radius: 4px; padding: 5px 10px; cursor: pointer;">▼</button></div>
+</div>
+</div>
+<div style="margin-bottom: 30px; border: 1px dashed #333; padding: 20px; border-radius: 8px;">
+<h3 style="color: #01e599; margin-top: 0;">[2] FIANCHETTO</h3>
+<p style="color: #fff; font-size: 14px; filter: blur(4px); cursor: pointer; transition: 0.5s;" onclick="this.style.filter='blur(0px)';">[CLICK TO DECRYPT] Developing the bishop to the long diagonal. // Bispo na grande diagonal.</p>
+<div style="text-align: center;"><img id="chess_com_diagram_0_14577885" src="/bundles/web/images/diagram-placeholder.png" class="chessDiagramEditorImg" alt="" width="220" height="220" /></div>
+<div style="background: rgba(0,0,0,0.5); padding: 10px; border-radius: 5px; display: flex; align-items: center; justify-content: space-between; border-left: 3px solid #01e599; margin-top: 15px;"><span style="font-size: 12px; color: #aaa;">SNIPER ACCURACY:</span>
+<div style="display: flex; align-items: center; gap: 10px;"><button onclick="let s=this.parentElement.querySelector('span'); s.textContent=parseInt(s.textContent)+1; s.style.color='#01e599';" style="background: rgba(1, 229, 153, 0.2); border: 1px solid #01e599; color: #01e599; padding: 5px 15px; cursor: pointer;"> + </button> <span style="font-size: 28px; font-weight: bold; color: #ffffff; min-width: 60px; text-align: center;">300</span> <button onclick="let s=this.parentElement.querySelector('span'); if(parseInt(s.textContent)&gt;0) s.textContent=parseInt(s.textContent)-1; s.style.color='#ff0000';" style="background: rgba(255, 0, 0, 0.2); border: 1px solid #ff0000; color: #ff0000; padding: 5px 15px; cursor: pointer;"> - </button></div>
+</div>
+</div>
+<div style="margin-bottom: 20px; border: 1px solid #00ff87; padding: 20px; border-radius: 8px; background: rgba(0, 255, 135, 0.05); text-align: center;">
+<h3 style="color: #fff; margin-bottom: 10px;">[3] GAMBIT // GAMBITO</h3>
+<div style="text-align: center;"><img id="chess_com_diagram_0_14577889" src="/bundles/web/images/diagram-placeholder.png" class="chessDiagramEditorImg" alt="" width="220" height="220" /></div>
+<p style="color: #888; font-size: 12px; margin-bottom: 20px;">Sacrificing material for activity. // Sacrificar material por ataque.</p>
+<button onclick="this.style.display='none'; this.parentElement.querySelector('#gambit-declined').style.display='none'; this.parentElement.querySelector('#gambit-result').style.display='block'; this.parentElement.querySelector('#gambit-result').innerHTML = '&lt;span style=\'color:#00ff87; font-size: 16px;\'&gt;ACCEPTED // ACEITO ♟️&lt;/span&gt;';" style="padding: 10px 30px; background: #00ff87; color: #000; font-weight: bold; border: none; cursor: pointer; clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%);">ACCEPT</button> <button id="gambit-declined" onclick="this.style.display='none'; this.parentElement.querySelector('#gambit-result').style.display='block'; this.parentElement.querySelector('#gambit-result').innerHTML = '&lt;span style=\'color:#ff0000; font-size: 16px;\'&gt;DECLINED // RECUSADO 🛡️&lt;/span&gt;';" style="padding: 10px 30px; background: transparent; border: 1px solid #ff0000; color: #ff0000; font-weight: bold; cursor: pointer; margin-left: 10px;">DECLINE</button>
+<div id="gambit-result" style="display: none; margin-top: 15px; font-weight: bold; letter-spacing: 2px;"></div>
+</div>
+<div style="margin-bottom: 20px; border-left: 3px solid #ffcc00; background: rgba(255, 204, 0, 0.05); padding: 15px;">
+<h3 style="color: #ffcc00; margin: 0;">[4] THE PIN // A CRAVADA</h3>
+<p id="desc_pin" style="color: #aaa; font-size: 12px;">[EN] A piece cannot move because it would expose a more valuable piece.</p>
+<button onclick="let t=document.getElementById('desc_pin'); t.innerText = t.innerText.includes('[EN]') ? '[PT-BR] Pe&ccedil;a imobilizada para proteger outra de maior valor.' : '[EN] A piece cannot move because it would expose a more valuable piece.';" style="background: transparent; border: 1px solid #ffcc00; color: #ffcc00; font-size: 9px; cursor: pointer; margin-bottom: 10px;">TRADUZIR</button>
+<div style="margin-top: 10px; border: 1px dashed #555; padding: 10px; text-align: center;"><span style="font-size: 24px;">🐴</span> <button onclick="alert('⛔ ILLEGAL MOVE! Piece is Pinned! // MOVIMENTO ILEGAL! Pe&ccedil;a cravada!');" style="background: #ffcc00; color: #000; border: none; padding: 5px 15px; font-weight: bold; cursor: not-allowed;" onmouseover="this.innerText='🚫 BLOCKED';" onmouseout="this.innerText='MOVE KNIGHT';">MOVE KNIGHT</button> <span style="font-size: 24px;">♔</span></div>
+</div>
+<div style="margin-bottom: 20px; border-left: 3px solid #00ff87; background: rgba(0, 255, 135, 0.05); padding: 15px;">
+<h3 style="color: #00ff87; margin: 0;">[5] THE FORK // O DUPLO</h3>
+<p style="color: #aaa; font-size: 12px;">One piece attacks two or more enemies simultaneously. // Ataque duas pe&ccedil;as ao mesmo tempo.</p>
+<div style="display: flex; justify-content: space-around; align-items: center; margin-top: 10px;">
+<div id="target1" style="color: #fff; font-size: 20px; opacity: 0.3; transition: 0.3s;">♖ ROOK</div>
+<div style="color: #00ff87; font-size: 30px; cursor: pointer;" onmouseover="document.getElementById('target1').style.opacity='1'; document.getElementById('target1').style.color='#ff0000'; document.getElementById('target2').style.opacity='1'; document.getElementById('target2').style.color='#ff0000'; this.style.transform='scale(1.2)';" onmouseout="document.getElementById('target1').style.opacity='0.3'; document.getElementById('target1').style.color='#fff'; document.getElementById('target2').style.opacity='0.3'; document.getElementById('target2').style.color='#fff'; this.style.transform='scale(1)';">♞</div>
+<div id="target2" style="color: #fff; font-size: 20px; opacity: 0.3; transition: 0.3s;">♕ QUEEN</div>
+</div>
+</div>
+<div style="margin-bottom: 20px; border-left: 3px solid #00bfff; background: rgba(0, 191, 255, 0.05); padding: 15px;">
+<h3 style="color: #00bfff; margin: 0;">[6] DISCOVERY // DESCOBERTO</h3>
+<p style="color: #aaa; font-size: 12px;">Move one piece to reveal an attack by another. // Revele um ataque a uma pe&ccedil;a.</p>
+<div style="text-align: center;"><img id="chess_com_diagram_0_14577917" src="/bundles/web/images/diagram-placeholder.png" class="chessDiagramEditorImg" alt="" width="220" height="220" /></div>
+<div style="width: 100%; height: 40px; background: #111; position: relative; overflow: hidden; cursor: pointer; border: 1px dashed #00bfff;" onmouseover="this.querySelector('.mask').style.left='100%'; this.querySelector('.hidden-attack').style.opacity='1';" onmouseout="this.querySelector('.mask').style.left='0'; this.querySelector('.hidden-attack').style.opacity='0.2';">
+<div class="hidden-attack" style="position: absolute; width: 100%; text-align: center; top: 10px; color: #ff0000; font-weight: bold; opacity: 0.2; transition: 0.5s;">⚠️ SNIPER ATTACK! ⚠️</div>
+<div class="mask" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #00bfff; transition: 0.5s ease-in-out; display: flex; align-items: center; justify-content: center; color: #000; font-weight: bold;">HOVER TO MOVE PAWN</div>
+</div>
+</div>
+<div style="margin-bottom: 20px; border-left: 3px solid #e0e0e0; background: rgba(255, 255, 255, 0.05); padding: 15px;">
+<h3 style="color: #fff; margin: 0;">[7] PROMOTION // PROMO&Ccedil;&Atilde;O</h3>
+<p style="color: #aaa; font-size: 12px;">Pawn reaches the 8th rank. // Pe&atilde;o chega na oitava.</p>
+<div style="text-align: center;"><img id="chess_com_diagram_0_14577931" src="/bundles/web/images/diagram-placeholder.png" class="chessDiagramEditorImg" alt="" width="220" height="220" /></div>
+<div style="text-align: center; margin-top: 15px;"><span style="font-size: 40px; color: #fff; cursor: pointer; transition: 0.5s;" onclick="if(this.innerText==='♙'){this.innerText='♕';this.style.color='#00ff87';this.style.textShadow='0 0 20px #00ff87';}else{this.innerText='♙';this.style.color='#fff';this.style.textShadow='none';}">♙</span>
+<div style="font-size: 10px; color: #666; margin-top: 5px;">CLICK TO PROMOTE</div>
+</div>
+</div>
+<div style="margin-bottom: 20px; border-left: 3px solid #ff0000; background: rgba(255, 0, 0, 0.05); padding: 15px;">
+<h3 style="color: #ff0000; margin: 0;">[8] BLUNDER // A CAPIVARADA</h3>
+<p id="txt_blunder" style="color: #aaa; font-size: 12px;">[EN] A terrible move that loses the game.</p>
+<button onclick="let t=document.getElementById('txt_blunder'); t.innerText=(t.innerText.includes('[EN]'))?'[PT-BR] Um erro terr&iacute;vel que entrega o jogo.':'[EN] A terrible move that loses the game.';" style="background: transparent; border: 1px solid #ff0000; color: #ff0000; font-size: 9px; cursor: pointer; margin-bottom: 5px;">SWITCH LANG</button> <button onclick="this.style.background='#ff0000';this.style.color='#fff';this.innerHTML='?? BLUNDER ??';setTimeout(()=&gt;{this.style.background='transparent';this.style.color='#ff0000';this.innerHTML='MAKE A MOVE';},2000);" style="width: 100%; padding: 10px; background: transparent; border: 1px solid #ff0000; color: #ff0000; cursor: pointer; font-weight: bold;">MAKE A MOVE</button></div>
+<div style="margin-bottom: 20px; border-left: 3px solid #9932cc; background: rgba(153, 50, 204, 0.05); padding: 15px;">
+<h3 style="color: #9932cc; margin: 0;">[9] ZWISCHENZUG // INTERMEDI&Aacute;RIO</h3>
+<p style="color: #aaa; font-size: 12px;">Unexpected move before recapture. // Lance surpresa no meio da troca.</p>
+<div style="display: flex; gap: 5px; margin-top: 10px;">
+<div style="flex: 1; padding: 5px; background: #222; text-align: center; font-size: 10px; color: #555;">EXPECTED</div>
+<div style="flex: 1; padding: 5px; background: #9932cc; text-align: center; font-size: 10px; color: #fff; animation: pulse 1s infinite;">INTERMEZZO!</div>
+<div style="flex: 1; padding: 5px; background: #222; text-align: center; font-size: 10px; color: #555;">RECAPTURE</div>
+</div>
+</div>
+<div style="margin-bottom: 20px; border-left: 3px solid #ff4500; background: rgba(255, 69, 0, 0.05); padding: 15px;">
+<h3 style="color: #ff4500; margin: 0;">[10] TIME TROUBLE // APURO</h3>
+<p style="color: #aaa; font-size: 12px;">Low time. Panic mode! // Pouco tempo no rel&oacute;gio!</p>
+<div style="background: #222; height: 10px; width: 100%; border-radius: 5px; overflow: hidden; margin-top: 10px;">
+<div id="time-bar" style="background: #ff4500; width: 100%; height: 100%; transition: width 3s linear;"></div>
+</div>
+<button onclick="let b=document.getElementById('time-bar'); b.style.transition='none'; b.style.width='100%'; setTimeout(()=&gt;{b.style.transition='width 3s linear'; b.style.width='0%';},100);" style="margin-top: 5px; background: transparent; border: 1px solid #ff4500; color: #ff4500; font-size: 10px; cursor: pointer;">START CLOCK PANIC</button></div>
+<div style="margin-bottom: 20px; border-left: 3px solid #fff; background: rgba(255, 255, 255, 0.05); padding: 15px;">
+<h3 style="color: #fff; margin: 0; cursor: help;" onmouseover="this.innerText='[11] HOLY HELL!'" onmouseout="this.innerText='[11] EN PASSANT'">[11] EN PASSANT</h3>
+<p style="color: #aaa; font-size: 12px;">Special pawn capture. Look it up. // Captura especial de pe&atilde;o.</p>
+<div style="text-align: center;"><img id="chess_com_diagram_0_14577933" src="/bundles/web/images/diagram-placeholder.png" class="chessDiagramEditorImg" alt="" width="220" height="220" /></div>
+</div>
+<div style="margin-bottom: 20px; border-left: 3px solid #00ff87; background: rgba(0, 255, 135, 0.05); padding: 15px;">
+<h3 style="color: #00ff87; margin: 0;">[12] CALCULATION // C&Aacute;LCULO</h3>
+<p style="color: #aaa; font-size: 12px;">Moves ahead. // Lances &agrave; frente.</p>
+<div style="display: flex; align-items: center; justify-content: center; gap: 15px; margin-top: 15px; background: #000; padding: 10px; border-radius: 8px;"><button onclick="let s=this.parentElement.querySelector('span'); if(parseInt(s.textContent)&gt;0) s.textContent=parseInt(s.textContent)-1;" style="background: rgba(0,191,255,0.2); border: 1px solid #00bfff; color: #00bfff; padding: 5px 15px; cursor: pointer;"> - </button>
+<div style="text-align: center;"><span style="font-size: 30px; font-weight: bold; color: #fff;">12</span>
+<div style="font-size: 9px; color: #444;">MOVES</div>
+</div>
+<button onclick="let s=this.parentElement.querySelector('span'); s.textContent=parseInt(s.textContent)+1;" style="background: rgba(255,0,0,0.2); border: 1px solid #ff0000; color: #ff0000; padding: 5px 15px; cursor: pointer;"> + </button></div>
+</div>
+<div style="margin-top: 20px; border: 1px solid #01e599; background: #000; padding: 20px; text-align: center; cursor: pointer;" onclick="alert('OTL SYSTEM: MISSION ACCOMPLISHED.'); this.style.background='#01e599'; this.querySelector('h1').style.color='#000'; this.querySelector('h1').innerText='MISSION COMPLETE';" onmouseover="this.style.boxShadow='0 0 30px #01e599';" onmouseout="this.style.boxShadow='none';">
+<h1 style="color: #01e599; margin: 0; letter-spacing: 5px; transition: 0.3s;">MISSION COMPLETE</h1>
+<p style="color: #444; font-size: 10px; margin-top: 5px;">CLICK TO FINISH THE SESSION</p>
+</div>
+</div>
+<div style="background: #000; padding: 10px; text-align: right; border-top: 1px solid #043927;"><span style="color: #043927; font-size: 10px; cursor: default;" onmouseover="this.style.color='#00ff87'; this.innerText='CODED BY LIGHT // DEV 30K';" onmouseout="this.style.color='#043927'; this.innerText='OTL SYSTEMS v.4.0 (FIXED)';">OTL SYSTEMS v.4.0 (FIXED)</span></div>
+<div style="max-width: 100%; margin: 30px auto 0; border: 2px dashed #00ff87; border-radius: 12px; overflow: hidden; position: relative; height: 180px; font-family: 'Courier New', monospace; background: #000;">
+<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('https://w0.peakpx.com/wallpaper/137/396/HD-wallpaper-koenigsegg-jesko-attack-2023-supercar-rear-view-gray-jesko-swedish-sports-cars-koenigsegg.jpg') center/cover; filter: brightness(0.3) grayscale(50%); z-index: 1;"></div>
+<div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 60%; z-index: 2; opacity: 0.6; background: linear-gradient(to top, rgba(0,255,135,0.6), transparent); clip-path: polygon(0% 100%, 10% 85%, 20% 90%, 30% 70%, 40% 75%, 50% 50%, 60% 60%, 70% 30%, 80% 40%, 90% 10%, 100% 0%, 100% 100%);"></div>
+<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: linear-gradient(rgba(0, 255, 135, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 255, 135, 0.1) 1px, transparent 1px); background-size: 20px 20px; z-index: 2;"></div>
+<div style="position: relative; z-index: 3; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+<h2 style="color: #fff; margin: 0; font-size: 18px; letter-spacing: 2px; background: rgba(0,0,0,0.8); padding: 5px 15px; border: 1px solid #00ff87; animation: blink 1s infinite;">🚨 URGENT FUNDING ALERT 🚨</h2>
+<div style="width: 90%; margin-top: 15px; background: rgba(0, 255, 135, 0.1); border-top: 2px solid #00ff87; border-bottom: 2px solid #00ff87; padding: 5px 0;"><marquee scrollamount="10" style="color: #00ff87; font-size: 16px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;"> 📈 NEED MONEY FOR KOENIGSEGG JESKO ATTACK // META: R$ 15.000.000,00 // SALDO ATUAL: R$ 3,50 (PAGO O UBER ONIX) // AJUDE UM DEV A SER FELIZ 📈 </marquee></div>
+<button onclick="alert('ERRO 404: DINHEIRO NOT FOUND. \nContinue codando, guerreiro. O Jesko vem em 2050.');" style="margin-top: 15px; background: #00ff87; color: #000; border: none; padding: 8px 20px; font-weight: bold; font-family: 'Courier New'; cursor: pointer; transition: 0.3s; box-shadow: 0 0 15px rgba(0,255,135,0.4);" onmouseover="this.style.transform='scale(1.1)'; this.style.background='#fff';" onmouseout="this.style.transform='scale(1)'; this.style.background='#00ff87';">DONATE 1 REAL (PIX)</button></div>
+</div>
+</div>
+<div style="height: 3px; background: linear-gradient(90deg, #043927 0%, #00ff87 50%, transparent 100%); margin: 20px 0; border-radius: 50px; box-shadow: 0px 4px 10px rgba(0, 255, 135, 0.3), inset 0px 1px 2px rgba(255, 255, 255, 0.2); z-index: 10; position: relative;"></div>
